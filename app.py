@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 import requests
 from bs4 import BeautifulSoup
+from flask import app
 
 app = Flask(__name__)
 
@@ -47,4 +48,5 @@ def home():
 if __name__ == '__main__':
 
     app.run(host='0.0.0.0', debug=True)
+
 
