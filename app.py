@@ -42,8 +42,9 @@ def home():
     all_headlines = {}
     for url in urls:
         all_headlines[url] = scrape_headlines(url)
-    return render_template('index.html', all_headlines=all_headlines)
+    return render_template('../index.html', all_headlines=all_headlines)
 
 if __name__ == '__main__':
 
     app.run(host='0.0.0.0', debug=True)
+
