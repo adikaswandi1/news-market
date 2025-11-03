@@ -18,7 +18,7 @@ urls = [
 
 def scrape_headlines(url):
     try:
-        response = requests.get(url, headers=headers)
+        response = requests.get(url)
         if response.status_code == 200:
             response.encoding = response.apparent_encoding
             soup = BeautifulSoup(response.text, 'html.parser')
